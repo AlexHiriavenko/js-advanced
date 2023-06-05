@@ -1,0 +1,41 @@
+.user-info {
+    background-color: rgb(247, 124, 124);
+    width: 60%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px;
+    gap: 10px;
+}
+
+p {
+    width: max-content;
+    padding: 5px;
+    
+}
+
+p:nth-child(odd) {
+    font-weight: 600;
+}
+
+button {
+    border: none;
+    background-color: #4f5af4;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.location, .ip {
+    min-width: 160px;
+    background-color: aliceblue;
+}
+
+li {
+    list-style-type: none;
+    color: blueviolet;
+    margin-bottom: 5px;
+}
