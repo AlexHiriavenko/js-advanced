@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Metric conversion</title>
+        <link
+            rel="shortcut icon"
+            href="https://cdn1.sysgears.com/images/favicons/favicon-831be2c494f47e01f44810d87d8d8bb5.ico" />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <h1>Distance Converter</h1>
+
+        <form id="convertForm">
+            <label for="fromUnit">Select the unit for conversion:</label>
+            <select id="fromUnit">
+                <option value="m">Meters (m)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="ft">Feet (ft)</option>
+                <option value="mm">Millimeters (mm)</option>
+                <option value="yd">Yards (yd)</option>
+                <option value="km">Kilometers (km)</option>
+            </select>
+
+            <label for="toUnit">Select the target unit for conversion:</label>
+            <select id="toUnit">
+                <option value="m">Meters (m)</option>
+                <option value="cm">Centimeters (cm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="ft">Feet (ft)</option>
+                <option value="mm">Millimeters (mm)</option>
+                <option value="yd">Yards (yd)</option>
+                <option value="km">Kilometers (km)</option>
+            </select>
+
+            <label for="distanceValue">Enter the distance value:</label>
+            <input
+                type="number"
+                id="distanceValue"
+                step="1"
+                placeholder="Enter a number" />
+
+            <label for="result">Conversion result:</label>
+            <input type="text" id="result" readonly />
+        </form>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>

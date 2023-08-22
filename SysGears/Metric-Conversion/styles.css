@@ -1,0 +1,11 @@
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    align-items: center;
+    gap: 30px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 6px 0;
+}
