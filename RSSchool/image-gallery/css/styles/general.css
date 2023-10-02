@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: orange !important;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+    color: black;
+}
+
+main {
+    max-width: 100vw;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    overflow-x: hidden;
+}

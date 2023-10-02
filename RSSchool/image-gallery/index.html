@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Unsplash API</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div id="header" class="container">
+                <a href="./"><h2><i class="fas fa-camera" style="color: orange;"></i>Unsplash API</h2></a>
+                <div id="search_box">
+                    <input id="input" type="text" placeholder="Search..." autofocus autocomplete="off">
+                        <i id="search" class="fas fa-search"></i>
+                        <i class="close">🗙</i>
+                </div>
+            </div>
+        </header>
+        <form action="">
+            <h3>Выберете категорию:</h3>
+            <select id="nature">
+                <option disabled selected>Nature</option>
+                <option value="forest">Forest</option>
+                <option value="lake">Lake</option>
+                <option value="mountain">Mountains</option>
+                <option value="desert">Desert</option>
+                <option value="island">Islands</option>
+                <option value="ocean">Ocean</option>
+                <option value="sea">Sea</option>
+            </select>
+            <select id="cities">
+                <option disabled selected>Cities</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Astana">Astana</option>
+                <option value="Minsk">Minsk</option>
+                <option value="Tbilisi">Tbilisi</option>
+                <option value="Warsaw">Warsaw</option>
+                <option value="Vilnius">Vilnius</option>
+                <option value="Riga">Riga</option>
+            </select>
+            <select id="sport">
+                <option disabled selected>Sport</option>
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="tennis">Tennis</option>
+                <option value="swimming">Swimming</option>
+                <option value="golf">Golf</option>
+                <option value="hockey">Hockey</option>
+            </select>
+        </form>
+        <section class="image-galley">
+            <div class="container">
+                <div id="grid">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__rss">
+            <li><time class="year-create">2023</time></li>
+            <li>
+                <a class="rss-link" href="https://rs.school/js-stage0/" target="_blank" title="RSS JS course">The Rolling
+                    Scopes School</a>
+            </li>
+            <li>
+                <a href="https://github.com/AlexHiriavenko/" target="_blank" title="author github">Alex Hiriavenko</a>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="modal">
+        <button class="btn-close-modal">✕</button>
+        <button class="pag toRight">►</button>
+        <button class="pag toLeft">◄</button>
+        <img class="modal-cert" src="./img/cover.jpg" alt="fullsize image" />
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

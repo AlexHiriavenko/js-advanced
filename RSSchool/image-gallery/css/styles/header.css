@@ -1,0 +1,77 @@
+header {
+    padding-top: 4px;
+    height: 76px;
+    width: 100%;
+    background-color: bisque;
+    border-bottom: 5px solid orange;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#header {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 20px;
+}
+
+#header h2 {
+    font-size: 2rem;
+}
+
+.fa,
+.fas {
+    color: orange;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+#search_box {
+    padding-block: 8px;
+    position: relative;
+    width: 350px;
+    box-sizing: content-box;
+    min-height: 36px;
+    right: 20px;
+}
+
+#search_box input {
+    box-sizing: content-box;
+    width: 100%;
+    min-height: 18px;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+    border: 1px solid #DDDDDD;
+}
+
+input:focus {
+    box-shadow: 0 0 5px orange;
+    border: 1px solid orange;
+}
+
+#search_box i {
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    top: 34%;
+    right: -26px;
+    transition: 0.5s;
+}
+
+#search_box .close {
+    position: absolute;
+    top: 24%;
+    right: 7px;
+    opacity: 0.7;
+}
+
+#search_box i:hover {
+    color: orange;
+}
