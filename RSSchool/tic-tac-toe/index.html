@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac_Toe</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/tictactoeFavicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="btn-statistic">Statistic</button>
+    <div class="container">
+        <h1>Tic-Tac-Toe Game</h1>
+        <p class="game-state"></p>
+        <p class="step">step: <span>0</span></p>
+
+        <div class="tic-tac-toe">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+            <div class="box box8"></div>
+            <div class="box box9"></div>
+        </div>
+
+        <button class="btnPlay">Play Again</button>
+    </div>
+
+    <footer class="footer">
+        <ul class="footer__rss">
+            <li><time class="year-create">2023</time></li>
+            <li>
+                <a class="rss-link" href="https://rs.school/js-stage0/" target="_blank" title="RSS JS course">The
+                    Rolling
+                    Scopes School</a>
+            </li>
+            <li>
+                <a href="https://github.com/AlexHiriavenko/" target="_blank" title="author github">Alex Hiriavenko</a>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="modal">
+        <button class="btn-close-modal">✕</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>№ of Game</th>
+                    <th>Steps</th>
+                    <th>Winner</th>
+                </tr>
+            </thead>
+            <tbody id="statisticTableBody">
+                <!-- Результаты игр будут добавляться сюда с использованием JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
